@@ -4,27 +4,52 @@
 
 
 def age_func(input):
+    '''  Returns a screen printout from the arguments parsed when called. 
     
+    Parameters:
+            input
+             -user_name (str): takes in a string of the client's name. e.g: Tedd
+             -age (int): takes in an integer of the client's age. e.g: 27
+    
+    Returns:
+            A print to screen of a message like this below.
+    Example: 
+            Hello Tedd, you are 27 years old
+            Your year of birth is 1993
+            As you are 27 years old, you are an adult
+            I was 17years old a decade ago
+             In 2030 i'll be 37y.o
+             In 2040 i'll be 47y.o
+             In 2050 i'll be 57y.o
+             In 2060 i'll be 67y.o
+            In 2070 i'll be 77y.o
+     '''
+  
 # declare user's name and age input
-    try:
-        user_name= str(input())
-        age = int(input())
+    while True:
+        try:
+            user_name= str(input())
+            age = int(input())
 
         # concatinate the strings and input
-        print('Hello ' + user_name + ',' + ' you are ' + str(age) + ' years old')
-    except ValueError:
-        print('Oops that was not a valid number')
-    except TypeError:
-        print('Argument must be a number')
-    try:
-        year = 2020
-        user_DOB = year - age
-        # Print the user’s age
-        print('Your year of birth is ' + str(user_DOB ))
-    except ValueError:
-        print('Oops that was not a valid number')
-    except TypeError:
-        print('Argument must be a number')
+            print('Hello ' + user_name + ',' + ' you are ' + str(age) + ' years old')
+        except ValueError:
+            print('Oops that was not a valid number')
+        except TypeError:
+            print('Argument must be a number')
+        break
+
+    while True:
+        try:
+            year = 2020
+            user_DOB = year - age
+            # Print the user’s age
+            print('Your year of birth is ' + str(user_DOB ))
+        except ValueError:
+            print('Oops that was not a valid number')
+        except TypeError:
+            print('Argument must be a number')
+        break
 
     # State which age group the user belongs to
 
