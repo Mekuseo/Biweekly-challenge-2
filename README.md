@@ -21,3 +21,6 @@
 * Avoid repetition when possible
 * Use comments and use docstrings too
 * Google "The Zen of Python"
+
+#Note
+This Repo has evolved to be one of  the github playground repo for DSCI (1.1)
